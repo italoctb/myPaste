@@ -1,0 +1,9 @@
+11:15 até 16:15 4hrs 25/01 ~email-bemVindo
+10:30 até 14:30 4hrs 26/01 ~email-bemVindo
+14:30 até 16:30 2hrs 26/01 ~email-confirmação
+12:00 até 13:00 1hr  27/01 ~email-confirmação
+15:30 até 17:30 2hrs 27/01 ~formatação-email
+17:30 até 18:30 1hr  27/01 ~email-convite
+10:20 até 16:20 6hrs 28/01 ~email-bemVindo
+16:20 até 22:20 6hrs 28/01 ~email-base
+14:00 até 21:00 7hrs 29/01 ~email-askride

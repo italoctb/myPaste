@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport">
+    <title>Bem-vindo ao Bynd!</title>
+  </head>
+  <body style="background-color: #E8F5F5; font-family: Arial; width: 580px;">
+    <table style="width: 580px; padding-top: 32px; margin-bottom: 25px;">
+      <tr style="text-align: center;">
+        <td>
+          <img src="http://beta.bynd.com.br/img/logo.png" style="height: 62px; width: 250px;"/>
+        </td>
+      </tr>
+    </table>
+    <table style="width: 480px; background-color: #ffffff; margin-right: 52px; margin-left: 49px; padding-left: 49px; padding-right: 45px; padding-top: 50px; padding-bottom: 40px; box-shadow: 0px 0px 10px #888888; border: 2px solid #C6CECE;">
+      <tr>
+        <td colspan="2">
+          <p style="color: #696970; margin-bottom:12px; font-size: 16px;">Olá <span style="color: #28c8d1">Abraão</span>.</p>
+          <p style="margin-bottom: 23px; color:#727276; line-height: 21px; font-size: 16px;"><b>{!! $route->user->first_name !!}</b> está pedindo uma carona na sua rota <b>{!! $rideRoute->start_name !!}</b> para o dia :</p>
+        </td>
+      </tr>
+      <tr style="text-align: center;">
+        <td style="background-color: #C3F0B3; padding: 1px; border: 2px solid #A5DC9A;" colspan="2">
+            <p style="color: #4f4e50; font-size: 22px;"><b>{{ $schedule->format('d/m/Y H:i') }}</b></p>
+        </td>
+      </tr>
+      <tr style="height: 22px;"></tr>
+      <tr>
+        <td style="border-top: 1px solid #D5D4D6;" colspan="2">
+          <p style="color:#727276; margin-top: 20px;">Informações do Usuário :</p>
+        </td>
+      </tr>
+      <tr style="padding-bottom: 10px; margin: auto;">
+        <td style="width: 40px; padding-left: 40px; padding-bottom: 20px;">
+
+            <img src="{{ $route->user->photo_url }}" alt="{!! $route->user->first_name !!}" style="border-radius: 500px; float: right;" width="50px"/>
+        </td>
+        <td style="padding-bottom: 20px;">
+            <p style="display: inline-block; margin-left: 10px;"><b style="color: #000000">{!! $route->user->name !!} -</b><span style="color: #28c8d1"> {{ $route->user->company->name }}</span><br><a href="#">{{ $route->user->email }}</a></p>
+        </td>
+
+      </tr>
+      <tr>
+        <td colspan="2" style="border-top: 1px solid #D5D4D6;">
+          <p style="color: #696970;">Informações da Rota:</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 30px;">
+          <img src="http://bynd-test.herokuapp.com/img/flag.png" style="float: right; width: 30px; height: 30px; margin-bottom: 14px;">
+        </td>
+        <td>
+          <p style="color:#727276; padding-left:10px; margin-top: 0px; font-size: 12px;">{{ $route->start_address }}</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 30px;">
+          <img src="http://bynd-test.herokuapp.com/img/carona_pin.png" style="float: right; width: 30px; height: 36px; margin-bottom: 14px;">
+        </td>
+        <td>
+          <p style="color: #696970; padding-left:10px; margin-top: 0px; font-size: 12px;">{{ $rideRoute->start_address }}/p>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 30px;">
+          <img src="http://bynd-test.herokuapp.com/img/flagfim.png" style="float: right; width: 30px; height: 30px; margin-bottom: 25px;">
+        </td>
+        <td>
+          <p style="color: #696970; padding-left:10px; margin-top: 0px; margin-bottom: 25px; font-size: 12px;">{{ $rideRoute->end_address }}</p>
+        </td>
+      </tr>
+      <tr>
+          <td style="padding-top: 25px; padding-bottom: 25px; background-color: #2EC8D2; text-align: center; width: 380px;" colspan="2">
+            <a href="http://www.bynd.com.br/" style=" text-decoration: none;"><p style="margin-bottom: 0px; margin-top: 0px; font-size: 20px; color: #FFFFFF;">acesse o bynd</p></a>
+          </td>
+      </tr>
+    </table>
+    <footer>
+      <table style="width: 580px; margin-top: 34px; margin-bottom: 13px;">
+        <tr style="text-align: center;">
+          <td>
+            <a href="http://www.bynd.com.br/" style=" text-decoration: none;"><span style="color: #28c8d1; font-size: 16px;"><b>www.bynd.com.br</b></span></a>
+          </td>
+        </tr>
+      </table>
+      <table style="margin: auto;">
+        <tr>
+          <td style="padding: 0px;">
+            <a href="https://www.facebook.com/byndweb/" style="text-decoration: none;"><img src="http://bynd-test.herokuapp.com/img/fb-icon.png"></a>
+          </td>
+          <td style="padding-left: 7px;">
+            <a href="https://www.facebook.com/byndweb/" style="text-decoration: none;"><p style="display: inline-block; color:#727276; font-size: 16px;">byndweb</p></a>
+          </td>
+          <td style="padding: 0px; padding-left: 15px;">
+            <a href="https://twitter.com/byndcaronas" style="text-decoration: none;"><img src="http://bynd-test.herokuapp.com/img/twt-icon.png"/></a>
+          </td>
+          <td style="padding-left: 7px;">
+            <a href="https://twitter.com/byndcaronas" style="text-decoration: none;"><p style="display: inline-block; color:#727276; font-size: 16px;">@ByndCaronas</p></a>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>
